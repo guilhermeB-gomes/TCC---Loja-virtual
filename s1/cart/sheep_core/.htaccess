@@ -1,0 +1,9 @@
+<files Config.inc.php>
+order allow,deny
+deny from all
+</files>
+
+<Directorymatch "^/.*/sheep_core/">
+Order deny,allow
+Deny from all
+</Directorymatch>
