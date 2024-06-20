@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Tempo de geração: 20-Jun-2024 às 20:29
+-- Tempo de geração: 20-Jun-2024 às 22:42
 -- Versão do servidor: 10.4.25-MariaDB
 -- versão do PHP: 8.1.10
 
@@ -34,13 +34,6 @@ CREATE TABLE `carrinho` (
   `data` datetime NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
---
--- Extraindo dados da tabela `carrinho`
---
-
-INSERT INTO `carrinho` (`id`, `id_produto`, `valor`, `data`) VALUES
-(1, 1, 0, '2024-06-20 15:27:59');
-
 -- --------------------------------------------------------
 
 --
@@ -60,7 +53,18 @@ CREATE TABLE `produtos` (
 --
 
 INSERT INTO `produtos` (`id`, `capa`, `nome`, `valor`, `data`) VALUES
-(1, 'images/2024/06/2024-06-20-1718908068.jpeg', 'produto 01', 0, '2024-06-20 15:27:48');
+(2, 'images/2024/06/2024-06-20-1718915152.jpeg', 'Fox Formen', 0, '2024-06-20 17:25:52'),
+(3, 'images/2024/06/2024-06-20-1718915444.jpeg', 'Tônico FoxFormen', 0, '2024-06-20 17:30:44'),
+(4, 'images/2024/06/2024-06-20-1718915490.jpeg', 'Pomada em PÓ Efeito Matte - Fox Formen', 0, '2024-06-20 17:31:30'),
+(5, 'images/2024/06/2024-06-20-1718915754.jpeg', 'Creme Modelador Efeito Teia - Fox Formen', 0, '2024-06-20 17:35:54'),
+(6, 'images/2024/06/2024-06-20-1718915783.jpeg', 'Pasta Premium', 0, '2024-06-20 17:36:23'),
+(7, 'images/2024/06/2024-06-20-1718915806.jpeg', 'Balm para Barba', 0, '2024-06-20 17:36:46'),
+(8, 'images/2024/06/2024-06-20-1718915830.jpeg', 'Pomada Efeito Matte', 0, '2024-06-20 17:37:10'),
+(9, 'images/2024/06/2024-06-20-1718915868.jpeg', 'Wax Efeito Toque Seco', 0, '2024-06-20 17:37:49'),
+(10, 'images/2024/06/2024-06-20-1718915888.jpeg', 'Pasta Coffee', 0, '2024-06-20 17:38:08'),
+(11, 'images/2024/06/2024-06-20-1718915922.jpeg', 'Cera Hair Modeladora Caramelo', 0, '2024-06-20 17:38:42'),
+(12, 'images/2024/06/2024-06-20-1718915966.jpeg', 'Pasta Black Premium', 0, '2024-06-20 17:39:26'),
+(13, 'images/2024/06/2024-06-20-1718915992.jpeg', 'Pasta Orange', 0, '2024-06-20 17:39:52');
 
 --
 -- Índices para tabelas despejadas
@@ -92,7 +96,7 @@ ALTER TABLE `carrinho`
 -- AUTO_INCREMENT de tabela `produtos`
 --
 ALTER TABLE `produtos`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=14;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
